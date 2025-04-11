@@ -1,12 +1,9 @@
+import os
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
-import os
 
-# 載入 .env
-load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
-LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID"))  # 從 .env 讀取你的 log 頻道 ID
+LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID"))
 
 # 設定 Intents
 intents = discord.Intents.default()
